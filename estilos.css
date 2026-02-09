@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.fondo {
+    background-image: url("IMAGENES/FONDO.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.contenedor {
+    background: 
+    rgba(255, 255, 255, 0.95);
+    padding: 40px 50px;
+    border-radius: 18px;
+    max-width: 780px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: bold;
+}
+
+.equipos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.marcador {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+input {
+    background: #ddd;
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.zona-jugadores {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.bloque {
+    width: 35%;
+}
+
+.jugador {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    align-items: center;
+    font-size: 11px;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.puntos-label {
+    color: #1b8f2f;
+}
+
+.penal-label {
+    color: #c62828;
+}
+
+select {
+    background: #ddd;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+button {
+    background: #0a73c9;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 8px;
+}
+
+.verde {
+    background: #7ed957;
+}
+
+.rojo {
+    background: #ff6b6b;
+}
+
+.resumen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#feedback {
+    color: green;
+    font-weight: bold;
+}

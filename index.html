@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor del Partido – Esgrima</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="fondo">
+    <div class="contenedor">
+
+        <h1>GESTOR DEL PARTIDO</h1>
+
+        <div class="equipos">
+            <input id="equipoA" placeholder="Nombre Equipo A">
+            <div id="scoreA" class="marcador">0</div>
+            <span>-</span>
+            <div id="scoreB" class="marcador">0</div>
+            <input id="equipoB" placeholder="Nombre Equipo B">
+        </div>
+
+        <p class="subtitulo">PUNTOS ACTUALES</p>
+
+        <div class="zona-jugadores">
+
+            
+
+            <div class="bloque">
+                <h3>Equipo A:</h3>
+
+                <div class="jugador">
+                    <input placeholder="Persona 1 A">
+
+                    <div class="control">
+                        <span class="label puntos-label">PUNTOS</span>
+                        <select class="puntos" data-equipo="A">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="control">
+                        <span class="label penal-label">FALTA</span>
+                        <select class="penal" data-equipo="A">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="jugador">
+                    <input placeholder="Persona 2 A">
+
+                    <div class="control">
+                        <span class="label puntos-label"></span>
+                        <select class="puntos" data-equipo="A">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="control">
+                        <span class="label penal-label"></span>
+                        <select class="penal" data-equipo="A">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="jugador">
+                    <input placeholder="Persona 3 A">
+
+                    <div class="control">
+                        <span class="label puntos-label"></span>
+                        <select class="puntos" data-equipo="A">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="control">
+                        <span class="label penal-label"></span>
+                        <select class="penal" data-equipo="A">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <button id="fin">ACABAR PARTIDO</button>
+
+            <div class="bloque">
+                <h3>Equipo B:</h3>
+
+                <div class="jugador">
+                    <input placeholder="Persona 1 B">
+
+                    <div class="control">
+                        <span class="label puntos-label">PUNTOS</span>
+                        <select class="puntos" data-equipo="B">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="control">
+                        <span class="label penal-label">FALTA</span>
+                        <select class="penal" data-equipo="B">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="jugador">
+                    <input placeholder="Persona 2 B">
+
+                    <div class="control">
+                        <span class="label puntos-label"></span>
+                        <select class="puntos" data-equipo="B">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="control">
+                        <span class="label penal-label"></span>
+                        <select class="penal" data-equipo="B">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="jugador">
+                    <input placeholder="Persona 3 B">
+
+                    <div class="control">
+                        <span class="label puntos-label"></span>
+                        <select class="puntos" data-equipo="B">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="control">
+                        <span class="label penal-label"></span>
+                        <select class="penal" data-equipo="B">
+                            <option value="0">0</option><option>1</option><option>2</option><option>3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Historial del partido</h2>
+        <ul id="historial"></ul>
+
+        <div class="resumen">
+            <h2>RESUMEN</h2>
+            <button id="copiar">COPIAR</button>
+            <span id="feedback"></span>
+        </div>
+
+    </div>
+</div>
+
+<script src="core.js"></script>
+</body>
+</html>
